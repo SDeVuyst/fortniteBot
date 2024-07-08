@@ -1,11 +1,2 @@
 discord.py @ git+https://github.com/Rapptz/discord.py@master
 psycopg2
-aiohttp>=3.7.4
-requests
-dateparser
-reactionmenu
-strprogressbar
-google-api-python-client
-pillow
-openai
-beautifulsoup4

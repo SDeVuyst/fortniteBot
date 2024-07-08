@@ -14,21 +14,14 @@ import random
 import psycopg2
 import time
 import discord
-import requests
-from bs4 import BeautifulSoup
 
 from discord.ext import tasks
 from discord.ext.commands import AutoShardedBot
-from discord import Webhook
-import aiohttp
 
 import embeds
-from helpers import WordFinder, db_manager, ArtBuilder
+from helpers import db_manager
 import exceptions
 
-from datetime import datetime, timedelta
-
-from cogs.general import DynamicVotesButton
 
 intents = discord.Intents.all()
 

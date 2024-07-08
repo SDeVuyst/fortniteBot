@@ -13,7 +13,7 @@ from typing import Callable, TypeVar
 from discord import app_commands
 
 from exceptions import *
-from helpers import db_manager
+
 
 T = TypeVar("T")
 

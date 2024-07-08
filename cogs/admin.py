@@ -7,20 +7,12 @@ Version: 5.5.0
 """
 
 import discord
-import os
 import embeds
-import random
-import asyncio
 
-import random
 from discord import app_commands
 from discord.ext import commands
-from helpers import ArtBuilder, checks, db_manager
-from discord.ext.commands import has_permissions
-from datetime import datetime
+from helpers import checks
 from exceptions import CogLoadError
-from discord.ext.commands import has_permissions
-from datetime import datetime
 
 
 
@@ -202,7 +194,7 @@ class Admin(commands.Cog, name="admin"):
             "Restarting. brb :wave:"
         ))
 
-        # We shut down the bot, but heroku will automatically restart it.
+        # We shut down the bot, but docker will automatically restart it.
         await self.bot.close()
 
 
